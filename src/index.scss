@@ -1,0 +1,251 @@
+* {
+    box-sizing: border-box;
+    
+    outline: none !important;
+    
+}
+
+body {
+    font-family: Open Sans, sans-serif;
+    background-color: #e7efec;
+}
+
+.fa-search {
+    position: absolute;
+    color: grey;
+    font-size: 40px;
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.search-flights {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-family: Open Sans, sans-serif;
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 400;
+
+    &__title {
+      height: 10%;
+      font-size: 5rem;
+      font-weight: 200;
+      margin-left: 0px;
+      border: 0;
+      vertical-align: baseline;
+      color: #000;
+      text-align: center;
+      background-color: transparent;
+      word-wrap: break-word;
+    }
+  
+    &__form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    &__input {
+      height: 5rem;
+      font-size: 24px;
+      border: none;
+      padding-left: 70px;
+      display: block;
+      width: 100%;
+      outline: none;
+    }
+  
+    &__btn {
+      height: 5rem;
+      width: 30%;
+      font-size: calc(.5rem + .5vw);
+      background: #1eb7ee;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 0 80px 0 0;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: .3s ease-in;
+      &:hover { 
+        border-radius: 0 30px 0 0;
+      }
+      &:active {
+        outline: none;
+      }
+    }
+    
+  
+    &__text {
+      font-size: calc(.5rem + .5vw);
+    }
+    
+  }
+  .wrapper {
+    display: flex;
+    width: 60%;
+  }
+  .nav-container {
+    margin-top: 50px;
+    margin: 50px auto 0 auto;
+    background:#73d2f0;
+    width: 100%;
+    border-radius: 60px 60px 0 0;
+    
+  }
+  
+  .nav-item {
+  
+      display: inline-flex;
+      justify-content: center;
+      text-decoration: none;
+      flex: 1 1 auto;
+      text-transform: uppercase;
+      border: 0;
+      position: relative;
+      font-weight: 2.5rem;
+      border-radius: 60px 60px 0 0;
+      outline: none;
+      background:#73d2f0;
+      color: #fff;
+      overflow: hidden;
+      outline: none;
+      padding: 0;
+      border: 0;
+      font-size: 1.5rem;
+      line-height: 5rem;
+      width: 50%;
+      height: 5rem;
+      cursor: pointer;
+      text-decoration: none;
+      
+      &__selected {
+        background: #fff;
+        color:#73d2f0;
+        
+      }
+      &:hover {
+        text-decoration: none;
+      }
+  }
+  
+  
+  .nav-tabs {
+    padding: 0px;
+  }
+  
+  .plane {
+    margin-right: 10px;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+  } 
+  
+  .information-container_head {
+    line-height: 3rem;
+  }
+  .information-container_tr {
+    vertical-align: middle;
+    font-size: calc(.8rem + 0.6vw);
+  
+  }
+  
+  .information-container_body {
+  
+    line-height: calc(1rem + 0.6vw);
+    &:hover {
+      box-shadow: 0 5px 10px rgba(37, 40, 41, 0.3);
+    }
+    &:nth-child(odd) {
+      background-color: rgba(0,102,135,.1)
+    }
+  }
+  
+  .table td, .table th {
+    padding: 0; 
+    vertical-align: middle; 
+    border-top: 1px solid #dee2e6; 
+  }
+  .table thead th {
+    vertical-align: middle;
+    border-bottom: 2px solid #dee2e6;
+    padding: 0 2px;
+  }
+  .logo {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .local-time-th {
+    min-width: 90px;
+  }
+  .empty-result {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    line-height: 20rem;
+    background-color: transparent;
+    font-size: 2rem;
+  }
+  
+  .company-name__logo {
+    height: 2.5rem;
+    padding-right: .3rem;
+  }
+  
+  .flights {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .term {
+    font-size: 26px;
+    line-height: 21px;
+    padding: 20px;
+    display: inline-flex;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 60px;
+    &__A {
+      color: green;
+      border: 1px solid green;
+    }
+    &__D {
+      color: hsl(194, 79%, 64%);
+      border: 1px solid hsl(194, 79%, 64%);
+    }
+    &__C {
+      color: hsl(44, 81%, 61%);
+      border: 1px solid hsl(44, 81%, 61%);;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
+  .spinner {
+    display: block;
+    margin: 5rem auto 5rem auto;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    border: 4px solid white;
+    border-bottom-color: transparent;
+    animation: rotate 1s linear infinite;
+  }
