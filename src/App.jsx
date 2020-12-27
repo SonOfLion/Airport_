@@ -2,9 +2,9 @@ import React from "react"
 import { BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
-import SearchForm from './flights/components/SearchForm';
-import Flights from './flights/components/Flights';
-import Navigation from './flights/components/Navigation';
+import SearchForm from '../src/flights/components/SearchForm';
+import Flights from '../src/flights/components/Flights';
+import Navigation from '../src/flights/components/Navigation';
 
 const App = () => {
     return (
