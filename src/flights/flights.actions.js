@@ -1,4 +1,4 @@
-import * as fligthsGateway from './flights.gateway';
+import * as fligthsGateway from '../flights/flights.gateway';
 
 export const SHOW_SPINNER = "SHOW_SPINNER";
 export const FLIGHTS_LIST_RECIEVED = 'FLIGHTS_LIST_RECIEVED';

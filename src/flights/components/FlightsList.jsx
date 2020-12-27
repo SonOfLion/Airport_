@@ -1,5 +1,5 @@
 import React from 'react';
-import TableHead from "./TableHead";
+import TableHead from "../components/TableHead";
 import moment from "moment"
 
 const FlightsList = ({flights}) => {

@@ -1,4 +1,4 @@
-import { SHOW_SPINNER ,FLIGHTS_LIST_RECIEVED } from './flights.actions';
+import { SHOW_SPINNER ,FLIGHTS_LIST_RECIEVED } from '../flights/flights.actions';
 
 const initialState = {
     isFetching: false,

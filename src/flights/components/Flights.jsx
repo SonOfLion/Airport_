@@ -2,10 +2,10 @@ import React, { useEffect } from "react";
 import { connect } from 'react-redux';
 import  qs from 'qs';
 import { useParams, useLocation, Redirect } from 'react-router-dom';
-import FlightsList from './FlightsList';
+import FlightsList from '../components/FlightsList';
 import { flightsListSelector, spinnerSelector } from '../flights.selectors';
 import * as flightsActions from  '../flights.actions';
-import Spinner from './Spinner'
+import Spinner from '../components/Spinner'
 
 const Flights = ({ getFlightsList, flightsList, isFetching }) => {
     
